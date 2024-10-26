@@ -4,48 +4,6 @@
 #  component = each.key
 #  env = var.env
 #}
-
-variable "sample" {
-  default = 100
-}
-variable "sample1"{
-  default = "Hello World"
-}
-output "sample" {
-  value = var.sample
-}
-output "sample1" {
-  value = var.sample1
-}
-variable "course"{
-  default ="dev"
-}
-variable "courses"{
-  default = [
-   "dev",
-    "ops"
-  ]
-}
-variable "course_details" {
-  description = "Details of courses"
-  default = {
-    devops = {
-      name = "devops"
-      time = "10"
-    }
-    ops = {
-      name = "aws"
-      time = "11"
-    }
-  }
-}
-
-output "course"{
-  value = var.course
-}
-output "courses"{
-  value = var.courses
-}
-output "course_details"{
-  value = var.course_details
-}
+ output "components" {
+   value = var.components
+ }
