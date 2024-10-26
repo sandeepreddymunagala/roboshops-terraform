@@ -26,11 +26,11 @@ variable "courses"{
     "ops"
   ]
 }
-variable "course_details"{
+variable "course_details" {
+  description = "Details of courses"
   default = {
-    devops =
-    {
-      name ="devops"
+    devops = {
+      name = "devops"
       time = "10"
     }
     ops = {
