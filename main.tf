@@ -17,3 +17,31 @@ output "sample" {
 output "sample1" {
   value = var.sample1
 }
+variable "course"{
+  default ="dev"
+}
+variable "courses"{
+  default = [
+   "dev",
+    "ops"
+  ]
+}
+variable "course_details"{
+  default = {
+    devops =
+    {
+      name ="devops"
+      time = "10"
+    }
+  }
+}
+
+output "course"{
+  value = var.course
+}
+output "courses"{
+  value = var.courses
+}
+output "course_details"{
+  value = var.course_details
+}
