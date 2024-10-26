@@ -33,6 +33,10 @@ variable "course_details"{
       name ="devops"
       time = "10"
     }
+    ops = {
+      name = "aws"
+      time = "11"
+    }
   }
 }
 
