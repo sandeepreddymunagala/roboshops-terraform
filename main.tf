@@ -5,3 +5,6 @@ module "instance"{
   env = var.env
 }
 
+output "test" {
+  value = var.components
+}
